@@ -9,9 +9,9 @@ req.onload = function(){
     for(var i=0;i<output.length;i++)
     {
         console.log(i+1 +") Country Name : "+output[i]["name"].common);
-        console.log("Region : "+output[i]["region"]);
-        console.log("sub-region : "+output[i]["subregion"]);
-        console.log("Population : "+output[i]["population"]);
+        console.log("Region : "+output[i].region);
+        console.log("sub-region : "+output[i].subregion);
+        console.log("Population : "+output[i].population.toLocaleString());
      }  
 }
 
